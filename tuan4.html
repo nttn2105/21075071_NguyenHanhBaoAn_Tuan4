@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            width: 960px;
+        }
+        
+        .bai-16 {
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+            margin-top: 50px;
+        }
+        
+        .stitched {
+            width: 50px;
+            padding: 10px;
+            margin: 5px auto;
+            background: #0d90df;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.3em;
+            border: 2px dashed #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 0 4px #0d90df, 2px 1px 6px 4px rgb(10, 10, 0.5);
+            text-shadow: -1px -1px#aa3030;
+            font-weight: normal;
+            text-align: center;
+        }
+        .bai11
+{
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    width: 1098px;
+}
+.bai12
+{
+    background-color: red;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 10px #888888 ;
+    text-shadow: 0 0 3px #000000 , 3px 0 3px #000000;
+    color: #000000;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+.bai14
+{
+    width: 300px;
+    height: 170px;
+    background: #6FAC21;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all 2s linear;
+    margin: 50px 50px;
+    text-align: justify;
+    border-bottom: dashed;
+    border-left: double;
+    border-right: dashed;
+    border-top: double;
+    border-color: red;
+}
+.bai14:hover
+{
+    transform: scale(2);
+    rotate: 360deg;
+    background: #1EC7E6;
+    opacity: 0.8;
+}
+        input[type=text]
+        {
+            width: 100px;
+            transition: width .35s ease-in-out;
+        }
+        input[type=text]:focus
+        {
+            width: 250px;
+           background-color: lightgreen;
+        }
+        .bai-16 a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .bai-17 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-17 nav {
+            width: 70%;
+        }
+        
+        .bai-17 ul {
+            background-color: #aa3030;
+            display: flex;
+            padding: 10px;
+        }
+        
+        .bai-17 li {
+            list-style: none;
+        }
+        
+        .bai-17 a {
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        
+        .bai-18 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-18 nav {
+            padding: 15px;
+            position: relative;
+            display: block;
+            top: 0px;
+            width: 90%;
+            background-color: green;
+        }
+        
+        .bai-18 li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        
+        .bai-18 a {
+            color: white;
+        }
+        
+        .bai-18 a:link {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .bai-18 a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+        
+        .bai-18 li>ul {
+            display: none;
+        }
+        
+        .bai-18 li:hover ul {
+            display: block;
+            position: absolute;
+            left: 200px;
+            background-color: green;
+            margin: 0px;
+        }
+        
+        .bai-18 li:hover ul li a:link {
+            display: block;
+            margin-left: 20px;
+        }
+        
+        .bai-19 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-19 nav {
+            background-color: white;
+            position: relative;
+            display: block;
+            margin: 10px;
+        }
+        
+        .bai-19>nav>ul {
+            display: flex;
+            background-color: #aa3030;
+        }
+        
+        .bai-19>nav>ul>li {
+            background-color: black;
+            padding: 20px 5px 20px 5px;
+            list-style: none;
+            width: 20%;
+            border: 1px solid #fff;
+            border-top: none;
+            border-bottom: none;
+        }
+        
+        .bai-19>nav>ul>li>a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .bai-19 li>ul {
+            display: none;
+        }
+        
+        .bai-19>nav>ul>li:hover {
+            background-color: greenyellow;
+        }
+        
+        .bai-19 li:hover ul {
+            display: block;
+            position: absolute;
+            left: 372px;
+            top: 50px;
+        }
+        
+        .bai-19 li:hover li {
+            background-color: silver;
+            list-style: none;
+            padding: 10px;
+            margin: 0px;
+        }
+        
+        .bai-19 li:hover li:hover {
+            background-color: green;
+        }
+        
+        .bai-19 li:hover a {
+            text-decoration: none;
+            color: black
+        }
+        
+        .bai-19 li:hover a:hover {
+            color: white;
+        }
+        
+        .bai-20 {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 5px;
+            box-shadow: 0px 5px 5px black;
+        }
+        
+        .bai-20 li>ul {
+            display: none;
+        }
+        
+        .bai-20 li:hover ul {
+            display: block;
+            position: absolute;
+            left: 800px;
+            top: 725px;
+        }
+        
+        .bai-20 a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bai11">
+            <p>I will be stuck here</p>
+        </div>
+        <div class="bai12">
+            <p>Best Seller 2019</p>
+        </div>
+        <div class="bai13">
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                  <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                  <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+              
+        </div>
+        <div class="bai14">
+            <p></p>
+        </div>
+        
+        <div class="bai15">
+            <label for="search">Search:</label>
+            <input type="text" name="search" id="search">
+        </div>
+        <!--Bài 16-->
+        <div class="bai-16">
+            <ul>
+                <li class="stitched"><a href="">Home</a></li>
+                <li class="stitched"><a href="">Services</a></li>
+                <li class="stitched"><a href="">Products</a></li>
+                <li class="stitched"><a href="">Contacts</a></li>
+            </ul>
+        </div>
+
+        <!--Bài 17-->
+        <div class="bai-17">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">ARTICLES</a></li>
+                    <li><a href="">FROM</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Bài 18-->
+        <div class="bai-18">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a>
+                        <ul>
+                            <li><a href="">Engineering</a></li>
+                            <li><a href="">Telecom</a></li>
+                            <li><a href="">Enery</a></li>
+                            <li><a href="">Finance</a></li>
+                            <li><a href="">Consultancy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Bài 19-->
+        <div class="bai-19">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Introdution>></a></li>
+                    <li><a href="">Portfolio>></a>
+                        <ul>
+                            <li><a href="">Photograpy</a></li>
+                            <li><a href="">Web & User Iterface Design</a></li>
+                            <li><a href="">Illusstration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Bài 20-->
+        <div class="bai-20">
+            <ul>
+                <li class="stitched"><a href="">Home</a></li>
+                <li class="stitched"><a href="">Services</a></li>
+                <li class="stitched"><a href="">Products</a>
+                    <ul>
+                        <li class="stitched">
+                            <a href="">Photography</a>
+                        </li>
+                        <li class="stitched">
+                            <a href="">Web & User <br> Interface <br> Design</a>
+                        </li>
+                        <li class="stitched">
+                            <a href="">Illusstration</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="stitched"><a href="">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
